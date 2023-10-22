@@ -6,7 +6,6 @@ import os
 database_url = os.getenv('DATABASE_URL')
 
 
-# client = MongoClient("mongodb+srv://anahit:aaaa1111@cluster0.lyujuxw.mongodb.net")
 client = MongoClient(database_url)
 db = client.libraryapp
 books = db.books
